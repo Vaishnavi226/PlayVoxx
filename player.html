@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Now Playing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="player-page">
+    <div class="player">
+      <img id="cover" />
+      <h2 id="title"></h2>
+      <p id="artist"></p>
+      <audio id="audio" controls autoplay></audio>
+
+      <a
+        class="back"
+        href="index.html"
+        onclick="localStorage.removeItem('currentSong')"
+      >
+        ⬅ Back to Home
+      </a>
+    </div>
+
+    <script>
+      const songData = JSON.parse(localStorage.getItem("currentSong"));
+
+      if (songData) {
+        document.getElementById("cover").src = songData.img;
+        document.getElementById("title").textContent = songData.title;
+        document.getElementById("artist").textContent = songData.artist;
+        document.getElementById("audio").src = songData.song;
+      } else {
+        document.getElementById("title").textContent = "No song selected";
+        document.getElementById("artist").textContent = "";
+        document.getElementById("audio").src = "";
+      }
+    </script>
+  </body>
+</html>

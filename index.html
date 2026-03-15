@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlayVox</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="logo">
+        <i class="fa-solid fa-compact-disc"></i>
+        <span>PlayVox</span>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="What do you want to play?" />
+      </div>
+
+      <div class="top-right">
+        <a href="#">Premium</a>
+        <a href="#">Support</a>
+        <a href="#">Download</a>
+      </div>
+    </header>
+
+    <div class="app">
+      <aside class="sidebar">
+        <h3>Your Library</h3>
+        <div class="card">
+          <p>Create your first playlist</p>
+          <button>Create Playlist</button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <h2>Trending Songs</h2>
+
+        <div class="scroller">
+          <!-- SONG 1 -->
+          <div class="song-card">
+            <div class="album">
+              <img src="Bairan.jpeg" />
+              <button
+                class="play-btn"
+                data-song="./Bairan.mp3"
+                data-title="Bairan"
+                data-artist="Banjaare"
+                data-img="Bairan.jpeg"
+              >
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+            <p class="song-title">Bairan</p>
+            <p class="song-sub">Banjaare</p>
+          </div>
+
+          <!-- SONG 2 -->
+          <div class="song-card">
+            <div class="album">
+              <img src="Dhurandar.jpeg" />
+              <button
+                class="play-btn"
+                data-song="./Dhurandar.mp3"
+                data-title="Dhurandar"
+                data-artist="Shashwat"
+                data-img="Dhurandar.jpeg"
+              >
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+            <p class="song-title">Dhurandar</p>
+            <p class="song-sub">Shashwat</p>
+          </div>
+
+          <!-- SONG 3 -->
+          <div class="song-card">
+            <div class="album">
+              <img src="Sheesha.jpeg" />
+              <button
+                class="play-btn"
+                data-song="./Sheesha.mp3"
+                data-title="Sheesha"
+                data-artist="Mitta Ror"
+                data-img="Sheesha.jpeg"
+              >
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+            <p class="song-title">Sheesha</p>
+            <p class="song-sub">Mitta Ror</p>
+          </div>
+
+          <!-- SONG 4 -->
+          <div class="song-card">
+            <div class="album">
+              <img src="Boyfriend.jpeg" />
+              <button
+                class="play-btn"
+                data-song="./Boyfriend.mp3"
+                data-title="Boyfriend"
+                data-artist="Karan Aujla"
+                data-img="Boyfriend.jpeg"
+              >
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+            <p class="song-title">Boyfriend</p>
+            <p class="song-sub">Karan Aujla</p>
+          </div>
+
+          <!-- SONG 5 -->
+          <div class="song-card">
+            <div class="album">
+              <img src="Sitaree.jpeg" />
+              <button
+                class="play-btn"
+                data-song="./Sitaree.mp3"
+                data-title="Sitaree"
+                data-artist="Arijit Singh"
+                data-img="Sitaree.jpeg"
+              >
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+            <p class="song-title">Sitaree</p>
+            <p class="song-sub">Arijit Singh</p>
+          </div>
+
+          <!-- SONG 6 -->
+          <div class="song-card">
+            <div class="album">
+              <img src="Blue Eyes.jpeg" />
+              <button
+                class="play-btn"
+                data-song="./Blueeyes.mp3"
+                data-title="Blue Eyes"
+                data-artist="Honey Singh"
+                data-img="Blue Eyes.jpeg"
+              >
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+            <p class="song-title">Blue Eyes</p>
+            <p class="song-sub">Honey Singh</p>
+          </div>
+        </div>
+
+        <!-- POPULAR ARTISTS -->
+        <h2 class="section-title">Popular Artists</h2>
+        <div class="artists-container">
+          <div class="artist-card">
+            <img src="pritam.jpeg" />
+            <h4>Pritam</h4>
+            <p>Artist</p>
+          </div>
+
+          <div class="artist-card">
+            <img src="Arrehman.jpeg" />
+            <h4>A.R. Rahman</h4>
+            <p>Artist</p>
+          </div>
+
+          <div class="artist-card">
+            <img src="Arijit.jpeg" />
+            <h4>Arijit Singh</h4>
+            <p>Artist</p>
+          </div>
+
+          <div class="artist-card">
+            <img src="sachin jigar.jpeg" />
+            <h4>Sachin Jigar</h4>
+            <p>Artist</p>
+          </div>
+
+          <div class="artist-card">
+            <img src="Karan Aujla.jpeg" />
+            <h4>Karan Aujla</h4>
+            <p>Artist</p>
+          </div>
+
+          <div class="artist-card">
+            <img src="HoneySingh.jpeg" />
+            <h4>Honey Singh</h4>
+            <p>Artist</p>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="footer-container">
+            <div class="footer-brand">
+              <h2>PlayVox</h2>
+              <p>Your vibe. Your music. Anytime.</p>
+            </div>
+
+            <div class="footer-links">
+              <h4>Company</h4>
+              <a href="#">About</a>
+              <a href="#">Careers</a>
+              <a href="#">Press</a>
+            </div>
+
+            <div class="footer-links">
+              <h4>Communities</h4>
+              <a href="#">Artists</a>
+              <a href="#">Developers</a>
+              <a href="#">Advertising</a>
+            </div>
+
+            <div class="footer-links">
+              <h4>Support</h4>
+              <a href="#">Help</a>
+              <a href="#">Contact</a>
+              <a href="#">Privacy</a>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>© 2026 PlayVox Music</p>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
