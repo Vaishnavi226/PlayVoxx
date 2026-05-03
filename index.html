@@ -36,8 +36,21 @@
       <aside class="sidebar">
         <h3>Your Library</h3>
         <div class="card">
-          <p>Create your first playlist</p>
-          <button>Create Playlist</button>
+          <input
+            type="text"
+            id="playlistInput"
+            placeholder="Enter playlist name"
+            class="playlist-input"
+            maxlength="50"
+          />
+          <button id="createPlaylistBtn" class="create-btn">
+            Create Playlist
+          </button>
+        </div>
+
+        <!-- Playlists Container -->
+        <div id="playlistsContainer" class="playlists-container">
+          <!-- Playlists will be rendered here dynamically -->
         </div>
       </aside>
 
